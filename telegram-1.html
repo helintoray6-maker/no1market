@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram +1 - NO1-Market</title>
+    <!-- Favicon eklendi -->
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- Tailwind CSS ve Montserrat fontlarını dahil ediyoruz. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c; /* Koyu gri arka plan */
+            color: #ffffff; /* Varsayılan metin rengi */
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+        .button-hover-effect {
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+        .button-hover-effect:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center min-h-screen p-4">
+
+    <!-- Üst kısım: NO1-Market başlığı, logo ve Ana Sayfa linki -->
+    <header class="w-full flex justify-between items-center p-2 px-4">
+        <!-- Başlık için responsive boyutlandırma eklendi -->
+        <div class="flex items-center">
+            <img src="logo.png" alt="NO1-Market Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full mr-2">
+            <div class="text-xl sm:text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+        </div>
+        <!-- Ana sayfaya geri dönmek için link -->
+        <a href="index.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-sm sm:text-base">Anasayfa</a>
+    </header>
+
+    <main class="w-full container bg-gray-800 p-8 rounded-lg shadow-xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Ürün görseli -->
+        <div class="product-image-container">
+            <img src="telegram+1.png" alt="Telegram +1 Görseli" class="rounded-lg shadow-lg">
+        </div>
+
+        <!-- Ürün bilgileri ve butonlar -->
+        <div class="product-details flex flex-col justify-center">
+            <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-blue-400">Telegram +1</h1>
+            <p class="text-lg mb-6">
+                Telegram SMS onayı için +1 ülke kodlu numara. Güvenilir ve hızlı bir şekilde SMS onayı alın.
+            </p>
+
+            <div class="flex items-center mb-6">
+                <span class="text-3xl font-extrabold text-red-500 mr-4">55 TL</span>
+            </div>
+
+            <!-- Satın alma butonları -->
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <!-- WhatsApp Butonu -->
+                <a href="https://wa.me/" target="_blank" class="w-full sm:w-1/2 bg-green-500 text-white font-bold py-3 px-6 rounded-full text-center button-hover-effect hover:bg-green-600">
+                    WhatsApp ile satın al
+                </a>
+                <!-- Telegram Butonu -->
+                <a href="https://t.me/mehmetkahraman019" target="_blank" class="w-full sm:w-1/2 bg-blue-500 text-white font-bold py-3 px-6 rounded-full text-center button-hover-effect hover:bg-blue-600">
+                    Telegram ile satın al
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Alt kısım: Telegram ve WhatsApp logoları -->
+    <footer class="flex justify-center space-x-6 p-4 mt-8 w-full">
+        <a href="https://t.me/mehmetkahraman019" target="_blank" class="link-hover-effect">
+            <img src="2.jpg" alt="Telegram Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+        <a href="https://wa.me/" target="_blank" class="link-hover-effect">
+            <img src="3.jpg" alt="WhatsApp Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takas</title>
+    <!-- Favicon eklendi -->
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- Tailwind CSS ve Montserrat, Cinzel fontlarını dahil ediyoruz. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c; /* Koyu gri arka plan */
+            color: #ffffff; /* Varsayılan metin rengi */
+            min-height: 100vh;
+        }
+        .link-hover-effect {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .link-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center min-h-screen p-4">
+
+    <!-- Üst kısım: NO1-Market başlığı, logo ve Ana Sayfa linki -->
+    <header class="w-full flex justify-between items-center p-2 px-4">
+        <!-- Başlık için responsive boyutlandırma eklendi -->
+        <div class="flex items-center">
+            <img src="logo.png" alt="NO1-Market Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full mr-2">
+            <div class="text-xl sm:text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+        </div>
+        <!-- Ana sayfaya geri dönmek için link -->
+        <a href="index.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-sm sm:text-base">Anasayfa</a>
+    </header>
+
+    <!-- Ana içerik kısmı -->
+    <main class="w-full max-w-5xl bg-gray-800 p-8 rounded-lg shadow-xl flex-grow flex flex-col justify-start items-center">
+        <!-- Başlık için responsive boyutlandırma eklendi -->
+        <h1 class="text-3xl sm:text-5xl font-extrabold mb-8 text-shadow">Takas</h1>
+        
+        <!-- Takas edilecek ürünlerin yer alacağı bölüm. Sadece 1 ürün kartı gösterilecek. -->
+        <div class="grid grid-cols-1 gap-8 w-full max-w-sm mx-auto">
+            <!-- Örnek Takas Kartı -->
+            <a href="hobi-paracik.html" class="bg-gray-700 p-4 rounded-lg shadow-lg flex flex-col items-center transform transition duration-300 hover:scale-105">
+                <img src="Hobi.png" alt="Hobi Paracık Görseli" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-yellow-400 text-center">Hobi Paracık</h3>
+                <p class="text-red-400 text-center mt-2 text-xl font-bold">SADECE TAKAS</p>
+            </a>
+        </div>
+    </main>
+
+    <!-- Alt kısım: Telegram ve WhatsApp logoları -->
+    <footer class="flex justify-center space-x-6 p-4 mt-8 w-full">
+        <a href="https://t.me/mehmetkahraman019" target="_blank" class="link-hover-effect">
+            <img src="2.jpg" alt="Telegram Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+        <a href="https://wa.me/" target="_blank" class="link-hover-effect">
+            <img src="3.jpg" alt="WhatsApp Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+    </footer>
+
+</body>
+</html>

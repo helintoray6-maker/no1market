@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Onayı</title>
+    <!-- Favicon eklendi -->
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- Tailwind CSS ve Montserrat fontlarını dahil ediyoruz. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c; /* Koyu gri arka plan */
+            color: #ffffff; /* Varsayılan metin rengi */
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .link-hover-effect {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .link-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #374151; /* Daha koyu gri kart arka planı */
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center min-h-screen p-4">
+
+    <!-- Ana sayfaya dönüş linki -->
+    <header class="w-full flex justify-between items-center p-2 px-4">
+        <!-- Başlık için responsive boyutlandırma eklendi -->
+        <div class="flex items-center">
+            <img src="logo.png" alt="NO1-Market Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full mr-2">
+            <div class="text-xl sm:text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+        </div>
+        <!-- Ana sayfaya geri dönmek için link -->
+        <a href="index.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-sm sm:text-base">Anasayfa</a>
+    </header>
+
+    <main class="w-full max-w-5xl bg-gray-800 p-8 rounded-lg shadow-xl flex-grow flex flex-col justify-start items-center">
+        <h1 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-yellow-400">SMS Onayı</h1>
+        
+        <!-- Ürün kartlarının yer alacağı bölüm. Mobil cihazlarda alt alta, tablet ve masaüstünde ise yan yana dizilir. -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- WhatsApp +90 Kartı -->
+            <a href="whatsapp-90.html" class="product-card">
+                <img src="whatsapp+90.png" alt="WhatsApp +90 Görseli" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-green-400 text-center">WhatsApp +90</h3>
+                <p class="text-red-400 text-center mt-2 text-xl font-bold">160 TL</p>
+            </a>
+            <!-- Telegram +90 Kartı -->
+            <a href="telegram-90.html" class="product-card">
+                <img src="telegram+90.png" alt="Telegram +90 Görseli" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-blue-400 text-center">Telegram +90</h3>
+                <p class="text-red-400 text-center mt-2 text-xl font-bold">130 TL</p>
+            </a>
+            <!-- Telegram +1 Kartı -->
+            <a href="telegram-1.html" class="product-card">
+                <img src="telegram+1.png" alt="Telegram +1 Görseli" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-blue-400 text-center">Telegram +1</h3>
+                <p class="text-red-400 text-center mt-2 text-xl font-bold">55 TL</p>
+            </a>
+            <!-- WhatsApp +1 Kartı -->
+            <a href="whatsapp-1.html" class="product-card">
+                <img src="whatsapp+1.png" alt="WhatsApp +1 Görseli" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-green-400 text-center">WhatsApp +1</h3>
+                <p class="text-red-400 text-center mt-2 text-xl font-bold">65 TL</p>
+            </a>
+        </div>
+    </main>
+
+    <!-- Alt kısım: Telegram ve WhatsApp logoları -->
+    <footer class="flex justify-center space-x-6 p-4 mt-8 w-full">
+        <a href="https://t.me/mehmetkahraman019" target="_blank" class="link-hover-effect">
+            <img src="2.jpg" alt="Telegram Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+        <a href="https://wa.me/" target="_blank" class="link-hover-effect">
+            <img src="3.jpg" alt="WhatsApp Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+    </footer>
+
+</body>
+</html>
